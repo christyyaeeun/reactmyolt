@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3reactmyoltstorageusers",
+  "bucketName": "reactmyolt-storage-users",
+  "policyUUID": "2828c31e",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ]
+}

@@ -1,0 +1,33 @@
+body {
+margin: 0;
+}
+
+
+#root {
+    padding: 0;
+}
+.container-fluid {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#bg {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/olt-react.appspot.com/o/petals.JPG?alt=media&token=fe46fa58-9ddb-4e8e-be8a-09322cd0286e);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -30;
+    /* filter: blur(1px); */
+     /* filter: opacity(0.86); */
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+

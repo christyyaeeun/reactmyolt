@@ -1,0 +1,190 @@
+* {
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+}
+
+/*
+font-family: 'Lora', serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+
+.App {
+  text-align: center;
+}
+
+#logo {
+  filter: invert();
+  position: fixed;
+  z-index: 20;
+  left: 50%;
+  top: 60%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(127, 149, 189);
+}
+
+.App-link {
+  color: #92ccdb;
+  text-align: left;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container-login {
+  margin: 5em;
+}
+
+.container {
+  margin-top: .1em;
+}
+
+h3.amplify-heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: xx-large;
+}
+
+.fluid {
+  display: flex;
+  position: absolute;
+  z-index: -5;
+  position: absolute;
+}
+
+.bg {
+  position: absolute;
+  z-index: -1;
+}
+
+.top-nav {
+  font-family: "Lora", serif;
+}
+
+.nav {
+  background-color: #afbedd !important;
+}
+
+.offcanvas-title {
+  font-family: "Lora", serif;
+}
+
+.heading-container {
+  opacity: 0.8;
+}
+
+@media (max-width: 576px) {
+  #logo {
+    max-width: 80%;
+    top: 70%;
+  }
+}
+
+[data-amplify-authenticator] {
+  opacity: 0.99;
+}
+
+[data-amplify-authenticator]:hover {
+  font-weight: 300;
+  filter: blur(1);
+}
+
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+
+.signOutBtn {
+  height: 50px;
+  border-radius: 8px;
+  fill-opacity: initial;
+  background: #e0ad6a;
+  filter: brightness(100%);
+  color: white;
+  border: none;
+  top: 0%;
+  box-shadow: 4px 2px #d4cdc4;
+}
+
+signOutBtn:hover {
+}
+
+.login {
+  margin-top: 0;
+}
+
+.heading-blue {
+  background: white;
+}
+
+
+.heading {
+  padding: 0;
+  margin: 0;
+}
+
+
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: x-large;
+  color: aliceblue;
+}
+
+
+.journal-content {
+  max-width: 400px;
+}
+
+.journal-page {
+  background-color: #c8e1e777;
+padding: 2em 1em 5em;
+margin-top: 2em;
+}
+
+/* .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  color: cadetblue;
+} */
+
+.nav-link:active {
+  color:cadetblue !important;
+}
+
+
+@media (max-width:300px) {
+  .journal-content {
+    max-width: 300px;
+
+  }
+  
+}

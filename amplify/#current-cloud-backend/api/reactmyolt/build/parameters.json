@@ -1,0 +1,13 @@
+{
+    "AppSyncApiName": "reactmyolt",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "S3DeploymentBucket": "amplify-reactmyolt-dev-201440-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/f9f6f82ed7aee7a6256e4e484ad5c8419bc161db"
+}

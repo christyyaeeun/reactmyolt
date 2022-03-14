@@ -1,0 +1,102 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-reactmyolt-dev-201440-authRole",
+      "UnauthRoleArn": "arn:aws:iam::075411383252:role/amplify-reactmyolt-dev-201440-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::075411383252:role/amplify-reactmyolt-dev-201440-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-reactmyolt-dev-201440-deployment",
+      "UnauthRoleName": "amplify-reactmyolt-dev-201440-unauthRole",
+      "StackName": "amplify-reactmyolt-dev-201440",
+      "StackId": "arn:aws:cloudformation:us-east-1:075411383252:stack/amplify-reactmyolt-dev-201440/2434cdf0-a334-11ec-9791-0e8ae6186b37",
+      "AmplifyAppId": "d2eq9kjul30yda"
+    }
+  },
+  "auth": {
+    "reactmyoltae85fb09": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "output": {
+        "UserPoolId": "us-east-1_nJE6rYrkD",
+        "AppClientIDWeb": "4bue85799eh9c93kd1b369dkce",
+        "AppClientID": "9cl5jvhovsfnj3tdpuo9q1o1n",
+        "IdentityPoolId": "us-east-1:8e04dbf8-842e-414e-9298-7deb2bf085d6",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:075411383252:userpool/us-east-1_nJE6rYrkD",
+        "IdentityPoolName": "reactmyoltae85fb09_identitypool_ae85fb09__dev",
+        "UserPoolName": "reactmyoltae85fb09_userpool_ae85fb09"
+      },
+      "lastPushTimeStamp": "2022-03-14T21:05:10.372Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactmyolt-dev-201440-deployment/amplify-cfn-templates/auth/reactmyoltae85fb09-cloudformation-template.json",
+        "logicalId": "authreactmyoltae85fb09"
+      }
+    }
+  },
+  "api": {
+    "reactmyolt": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 30,
+              "description": "api key description"
+            }
+          },
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AWS_IAM"
+            }
+          ]
+        },
+        "GraphQLAPIIdOutput": "qwv5udhgqzclrpykootoqi72my",
+        "GraphQLAPIEndpointOutput": "https://bjscis5fonfplfnern4m7dhvr4.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-zj5pulwjinb4papxw6jo45t5lq"
+      },
+      "lastPushTimeStamp": "2022-03-14T21:05:10.374Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactmyolt-dev-201440-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apireactmyolt"
+      }
+    }
+  },
+  "storage": {
+    "s3reactmyoltstorageusers": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-03-14T21:05:10.387Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-reactmyolt-dev-201440-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storages3reactmyoltstorageusers"
+      },
+      "output": {
+        "BucketName": "reactmyolt-storage-users201440-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "Vr6CSJNe4WZYUZ+arHQMRvveXAg="
+    }
+  }
+}
